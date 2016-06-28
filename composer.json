@@ -1,12 +1,12 @@
 {
-    "name": "fruitcakestudio/knvb-dataservice-api",
-    "description": "KNVB Dataservice API",
+    "name": "rbstudio/knvb-dataservice-api",
+    "description": "KNVB Dataservice API fork",
     "keywords": ["knvb", "dataservice", "sportlink"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
+            "name": "Lubomir Varbanov",
+            "email": "l.varbanov@redbuffstudio.com"
         }
     ],
     "require": {
@@ -17,11 +17,6 @@
     "autoload": {
         "psr-4": {
             "KNVB\\Dataservice\\": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.2-dev"
         }
     }
 }
