@@ -36,9 +36,19 @@ class Match extends AbstractItem
 
     /**
      * Naam van team bestaande uit Club TeamAanduiding
-     * @var string
+     * @var string|null
      */
     public $ThuisClub;
+    /**
+     * Naam van team bestaande uit Club TeamAanduiding
+     * @var string
+     */
+    public $ThuisClubNummer;
+    /**
+     * Naam van team bestaande uit Club TeamAanduiding
+     * @var string
+     */
+    public $UitClubNummer;
 
     /**
      * URL van logo van thuisclub
@@ -54,7 +64,7 @@ class Match extends AbstractItem
 
     /**
      * Naam van team bestaande uit Club TeamAanduiding
-     * @var string
+     * @var string|null
      */
     public $UitClub;
 
@@ -89,6 +99,12 @@ class Match extends AbstractItem
     public $CompNummer;
 
     /**
+     * Competitie Nummer
+     * @var string
+     */
+    public $Competitie;
+
+    /**
      * Wedstrijddag
      * @var int
      */
@@ -96,17 +112,20 @@ class Match extends AbstractItem
 
     /**
      * # doelpunten thuis club
+     * @var int|null
      */
     public $PuntenTeam1;
 
     /**
      * # doelpunten uit club
+     * @var int|null
      */
     public $PuntenTeam2;
 
     /**
      * # doelpunten thuis club in verlenging,
      * geeft NULL als er niet is gescoord of er geen verlenging is geweest
+     * @var int|null
      *
      */
     public $PuntenTeam1Verl;
@@ -114,6 +133,7 @@ class Match extends AbstractItem
     /**
      * # doelpunten uit club in verlenging,
      * geeft NULL als er niet is gescoord of er geen verlenging is geweest
+     * @var int|null
      *
      */
     public $PuntenTeam2Verl;
@@ -121,6 +141,7 @@ class Match extends AbstractItem
     /**
      * # doelpunten thuis club bij strafschoppen,
      * geeft NULL als er niet is gescoord of er geen strafschoppen genomen zijn
+     * @var int|null
      *
      */
     public $PuntenTeam1Strafsch;
@@ -128,6 +149,7 @@ class Match extends AbstractItem
     /**
      * # doelpunten thuis club bij strafschoppen,
      * geeft NULL als er niet is gescoord of er geen strafschoppen genomen zijn
+     * @var int|null
      *
      */
     public $PuntenTeam2Strafsch;

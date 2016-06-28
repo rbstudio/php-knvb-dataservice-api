@@ -78,9 +78,8 @@ class Api
 	 */
 	public function map($json, $object)
 	{
-		return $this->mapper->map((object) $json, $object);
+        return $this->mapper->map((object) $json, $object);
 	}
-
 
 	/**
 	 * Initialize the session and authenticate this club
