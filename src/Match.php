@@ -106,7 +106,7 @@ class Match extends AbstractItem
 
     /**
      * Wedstrijddag
-     * @var int
+     * @var int|null
      */
     public $WedstrijdDag;
 
