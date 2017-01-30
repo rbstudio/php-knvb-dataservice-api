@@ -151,15 +151,17 @@ class Competition extends AbstractItem
     }
 
     /**
+     * @param  array|null $params
      * @return Ranking[]
      * @throws InvalidResponseException
      */
-    public function getRanking()
+    public function getRanking($params = null)
     {
         $response = $this->api->request(
-            'competities/'.$this->TeamId.'/'.$this->District.'/'.$this->CompId.'/'.$this->ClassId.'/'.$this->PouleId.'/ranking'
+            'competities/'.$this->TeamId.'/'.$this->District.'/'.$this->CompId.'/'.$this->ClassId.'/'.$this->PouleId.'/ranking',
+            $params
         );
-
+        
         $ranking = array();
         foreach($response['List'] as $item){
             $ranking[] = $this->api->map($item, new Ranking());
