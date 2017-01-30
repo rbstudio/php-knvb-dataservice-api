@@ -63,6 +63,24 @@ class Competition extends AbstractItem
      */
     public $TeamAanduiding;
 
+    /**
+     * TeamReportNaam
+     * @var string|null
+     */
+    public $TeamReportNaam;
+    
+    /**
+     * metStand
+     * @var string|null
+     */
+    public $metStand;
+    
+    /**
+     * Perioden
+     * @var int|null
+     */
+    public $Perioden;
+
     /** @var Api */
     protected $api;
 
